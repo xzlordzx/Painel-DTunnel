@@ -56,16 +56,16 @@ apt install git -y
 curl -fsSL https://deb.nodesource.com/setup_20.x | bash
 apt-get install -y nodejs -y
 #=========================
-git clone https://github.com/endblack/Painel-DTunnel.git
+git clone https://github.com/xzlordzx/Painel-DTunnel.git
 cd /root/Painel-DTunnel
 chmod 777 pon poff menuop backmod
 mv pon poff menuop backmod /bin
 echo "PORT=$porta" > .env
 echo "NODE_ENV=\"production\"" >> .env
 echo "DATABASE_URL=\"file:./database.db\"" >> .env
-token1=$(node -e "console.log(require('crypto').randomBytes(100).toString('base64'));")
-token2=$(node -e "console.log(require('crypto').randomBytes(100).toString('base64'));")
-token3=$(node -e "console.log(require('crypto').randomBytes(100).toString('base64'));")
+token1=$(node -e "console.log(require('crypto').randomBytes(256).toString('base64'));")
+token2=$(node -e "console.log(require('crypto').randomBytes(256).toString('base64'));")
+token3=$(node -e "console.log(require('crypto').randomBytes(256).toString('base64'));")
 echo "CSRF_SECRET=\"$token1\"" >> .env
 echo "JWT_SECRET_KEY=\"$token2\"" >> .env
 echo "JWT_SECRET_REFRESH=\"$token3\"" >> .env
