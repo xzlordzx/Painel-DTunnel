@@ -14,7 +14,7 @@
 <h3>• Instalação Automática</h3> <br>
 
 ```sh
-apt update -y; apt install wget -y; wget https://raw.githubusercontent.com/endblack/Painel-DTunnel/main/i.sh; chmod 777 i.sh; ./i.sh
+apt update -y; apt install wget -y; wget https://raw.githubusercontent.com/xzlordzx/Painel-DTunnel/main/i.sh; chmod 777 i.sh; ./i.sh
 ```
 ✅ Adicionado um menu simples <br>
 • para acessar digite ```menuop``` <br>
@@ -28,7 +28,7 @@ apt update -y; apt install wget -y; wget https://raw.githubusercontent.com/endbl
 Primeiramente clone o projeto
 
 ```sh
-git clone https://github.com/endblack/Painel-DTunnel.git
+git clone https://github.com/xzlordzx/Painel-DTunnel.git
 ```
 Agora acesse a pasta ```cd Painel-DTunnel``` e crie o arquivo ```.env```
 
